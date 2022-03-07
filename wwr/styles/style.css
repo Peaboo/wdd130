@@ -80,7 +80,16 @@ h2 {
     color: #EFA00B;
     margin: 0;
 }
-
+h3 {
+    font-size: .8em;
+    color: #EFA00B;
+    margin: 0;
+}
+h5 {
+    font-size: 2em;
+    color: #EFA00B;
+    margin: 0;
+}
 #background {
     height: 725px;
     background-color: #0075c4;
@@ -183,7 +192,10 @@ footer .social img{
     transition: transform 5s;
     box-shadow: 5px 5px 10px black;
 }
-.card-img, .mountains{
+.card-img:hover {
+    transform: scale(1.1);
+}
+.card-img, .mountains,.safety{
     width: 100%;
 }
 .mountains {
@@ -192,12 +204,63 @@ footer .social img{
     grid-row: 5/8;
     box-shadow: 5px 5px 10px black;
 }
+.safety {
+    width: 100%;
+    grid-column: 6/10;
+    grid-row: 3/4;
+    box-shadow: 5px 5px 10px black;
+    align-self: center;
+}
+.apparel {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 1/2;
+    box-shadow: 5px 5px 10px black  ;
+    align-self: center;
+}
+.apparel-msg {
+    background-color: #144367;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 1/2;
+    box-shadow: 5px 5px 10px black;
+}
+.safety-msg {
+    background-color: #144367;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 2/6;
+    grid-row: 3/4;
+    box-shadow: 5px 5px 10px black;
+}
+.bring {
+    width: 100%;
+    grid-column: 3/9;
+    grid-row: 5/7;
+    box-shadow: 5px 5px 10px black;
+    justify-self: center;
+}
+.bring-msg {
+    background-color: #144367;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 2/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px black;
+    padding: 35px;
+}
 .home-grid {
     display: grid;    
     grid-template-columns: repeat(10, 1fr);
 }
+.subpage-grid {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 200px 1fr 150px 1fr 1fr 
+}
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .subpage-grid {
         display: block;
         height: auto;
     }
@@ -235,5 +298,6 @@ footer .social img{
     }
     footer {
         margin-top: 25px;
+        width: 100%;
     }
 }
