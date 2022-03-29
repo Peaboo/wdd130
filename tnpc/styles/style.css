@@ -88,6 +88,9 @@ h1 {
     grid-column: 4/6;
     box-shadow: 5px 5px 10px;
 }
+.spreadsheet {
+    grid-column: 2/5;
+}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
