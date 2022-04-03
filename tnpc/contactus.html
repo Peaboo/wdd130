@@ -93,15 +93,30 @@ button {
 .moveDown {
     margin-top: 3em;
 }
+
     </style>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+  }
+    </script>
 </head>
 <body>
     <div id="header">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="#" alt="tnpc logo">
+                <img class="logo" src="#" alt="">
             </a>
             <nav>
+              <span onclick="openNav()"><img src="images/fire_icon.png" alt="fire_icon"></span>
                 <a href="index.html">Home</a>
                 <a href="schedule.html">Schedule</a>
                 <a href="contactus.html">Contact Us</a>
@@ -148,11 +163,14 @@ button {
                 </script>
         </div>
         <main class="contact-grid">
-            <img class="boothimage" src="#" alt="#">
-            <img class="boothimage2" src="#" alt="#">
-            <img class="boothimage3" src="#" alt="#">
-            <img class="boothimage4" src="#" alt="#">
-            
+          <img class="main-image" src="images/boothpic1.jpg" alt="booth1">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">Home</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
         </main>
         <footer>
             <h2>TNPC &copy; 2022 - Jason Peabody</h2>
